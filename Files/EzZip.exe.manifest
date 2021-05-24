@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="EzZip.exe" version="4.0.0.2" publicKeyToken="2a71ff260b8556a5" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="Final.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="EzZip" version="4.2.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="EzZip.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AeroTools.dll" size="32733">
+      <assemblyIdentity name="AeroTools" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>GUuYDoUq9wz41XXWNGyXgBkOKBRFMXO+/4G2WysYGwo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AltoHttp.dll" size="32256">
+      <assemblyIdentity name="AltoHttp" version="1.0.7671.39700" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>5JusvBNXKPbexMben7Vk478FlzRLhSoaXsWhynWFv4g=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DotNetZip.dll" size="460288">
+      <assemblyIdentity name="DotNetZip" version="1.15.0.0" publicKeyToken="6583C7C814667745" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>aY5L7romNj5jLLu4M/yAAM+Fq1RJYnvw7cggPwWmT6E=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EzZip.exe" size="1631200">
+      <assemblyIdentity name="EzZip" version="4.2.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>3LUCEMZqqDfQDi5DaMXLWkZzy/BO5A3fBfFcQ8Vo7/8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Newtonsoft.Json.dll" size="701992">
+      <assemblyIdentity name="Newtonsoft.Json" version="13.0.0.0" publicKeyToken="30AD4FE6B2A6AEED" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>tiSUnfiw46YVP9+3MKfG9JkLZZLuDZIuF4hDPSdmEPM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WindowsFormsAero.dll" size="101376">
+      <assemblyIdentity name="WindowsFormsAero" version="1.5.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>eN2R62XbmZnv1+ErVGINYVE3Kl2cj7+zeUjyWZi6gJE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="EzZip.exe.config" size="1904">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>DpkoAjdc7WYqbn8BpsuHjgj0W0mdqUeAmOuJXFRfcC8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Final.ico" size="156254">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>gw2HGYmyIqC/8CoNaalrhx72gVNkJIoWnWomWYNb+t4=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=Windows7-PC\Eric" issuerKeyHash="c15f83abfefe3e7d00ed6abfec2c50d9c65e4cea" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>cum/Z8QyynAiyoJxG3oJC/Vbhw/UQch0XUH34OaWeGs=</DigestValue></Reference></SignedInfo><SignatureValue>wNsmOZivefJd2FPik1cSMi0AoY1YThicAe7b6O2wPyfP/c/qSaBvOwKLMlt7bb4dU8xkdlgC/z8OR9a8ASNdFmlD6RtQCgmSx78XjIUqm9laIZUeJgsaBmvVjYDEAtEl7rYgkTNknh5Ldl7fo1J5vZYttWhqQw4sJjJ5FOAdJmk=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>x1IUWkraoLRwcxvHDVInBNRL3KPqh27bqPkM9aznJT0sQtJHCPKoUsT+2xS+p6DK42WavNkMVHe9bl9ZoIyVGpp7yGrIop50mZ26IaUx+FJu7Dporo5I0i+RtIFlCoI3ONPi8CFJq7RTNihz9APCsueCZlTp3MpwI843PUcjf0k=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="6b7896e6e0f7415d74c841d40f875bf50b097a1b7182ca2270ca32c467bfe972" Description="" Url=""><as:assemblyIdentity name="EzZip.exe" version="4.0.0.2" publicKeyToken="2a71ff260b8556a5" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=Windows7-PC\Eric</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>E8876djERyPQqcDT/EP2UN8Im58QdjPI2sTbTqgmb1U=</DigestValue></Reference></SignedInfo><SignatureValue>C2POHh4SKIuPHXmOQzJiOZr+89Of+Aq/vhTQFUjI6AIQ4hYrad8Av14aSWon5HUIzs2Jls65BDrkxB/EI8zLLnO8dO2umL1yKArgj/y2NRjmrTth1OmwX8kFGx/N9EhMoCgsm1HhjjHB726Xxqm+Ud+EdRWROA+p2qcF46VK2VI=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>x1IUWkraoLRwcxvHDVInBNRL3KPqh27bqPkM9aznJT0sQtJHCPKoUsT+2xS+p6DK42WavNkMVHe9bl9ZoIyVGpp7yGrIop50mZ26IaUx+FJu7Dporo5I0i+RtIFlCoI3ONPi8CFJq7RTNihz9APCsueCZlTp3MpwI843PUcjf0k=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB2TCCAUKgAwIBAgIQXbol/yiJCZhPku/8onzWCzANBgkqhkiG9w0BAQsFADArMSkwJwYDVQQDHiAAVwBpAG4AZABvAHcAcwA3AC0AUABDAFwARQByAGkAYzAeFw0yMTA1MDYxNjE1MjdaFw0yMjA1MDYyMjE1MjdaMCsxKTAnBgNVBAMeIABXAGkAbgBkAG8AdwBzADcALQBQAEMAXABFAHIAaQBjMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDHUhRaStqgtHBzG8cNUicE1Evco+qHbtuo+Qz1rOclPSxC0kcI8qhSxP7bFL6noMrjZZq82QxUd71uX1mgjJUamnvIasiinnSZnbohpTH4Um7sOmiujkjSL5G0gWUKgjc40+LwIUmrtFM2KHP0A8Ky54JmVOncynAjzjc9RyN/SQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAHfjSMoKFDBx42PTMDJ2lW6Pdi9/kTCyAGaXjZ3UHZgRBeeKQ3KaxH+IfS5yfZA+1yKMCCOxMdphoKorP3lIYzNQHPKy4B6m043+XZqSp1cItiJJ7op/6OVW3EobtBctArFOmA6VyfrE/cOsTCJ3PHJHXLjuvIDGrT9umGW3cgDT</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
