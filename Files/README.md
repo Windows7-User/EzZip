@@ -1,4 +1,4 @@
 # EzZip Main Files
-This dir is for they actual files and libs of EzZip.
+This dir is for the actual files and libs of EzZip.
 
 Enjoy!
