@@ -1,5 +1,5 @@
 # Auto detect text files and perform LF normalization
-*          text=auto
+*.exe      text=auto
 
 *.exe      text diff=exe
 *.cs       text diff=csharp
